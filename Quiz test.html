@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js">  </script>
+    <script src="js/quizFunction.js"></script>
+    <link href="css/quiz.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h5 class="card-text" style="float: right; font-weight:bold;">Total Time:<br>(00: <span id="time">00</span>)
+        </h5>
+
+        <!--First Page-->
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8 border p-4">
+                <div class="card-body">
+                    <h5 class="card-text" style="float: right; font-weight:bold;">MC Quiz</h5>
+                    <h5>(<span id="number">0</span>of 5)</h5>
+                </div>
+                <hr>
+                <div class="start-page">
+                    <h3 class="text-center mb-5">Software Developer Basics MCQ's</h3>
+                    <p>You will get 5 point for each correct answer, At the end of Quiz,
+                        your total score will be displayed. Maximum score is 25 points
+                    </p>
+                    <div id="startQuiz">
+                        <button class="btn btn-success d-flex mx-auto mt-4" id="btn">
+                            <h5>Start the Quiz</h5>
+                        </button>
+                    </div>
+                </div>
+                <!--Quiz page-->
+                <div id="main">
+                    <div id="mainBody">
+                        <div class="card-body">
+                            <h5 class="card-text" style="font-weight: bold" id="question"></h5>
+                        </div>
+                        <div class="col-md-12 p-4" id="options">
+
+                            <button class="btn btn-block btn-outline-success text-left option" type="button"
+                                id="option1"></button>
+                            <button class="btn btn-block btn-outline-success text-left option" type="button"
+                                id="option2"></button>
+                            <button class="btn btn-block btn-outline-success text-left option" type="button"
+                                id="option3"></button>
+                            <button class="btn btn-block btn-outline-success text-left option" type="button"
+                                id="option4"></button>
+
+                            <div class="alert alert-success" role="alert" id="rightAns">
+                                Yeah, Your Answer is Correct :)
+                            </div>
+
+                            <div class="alert alert-warning" role="alert" id="wrongAns">
+                                Sorry, It was Incorrect Answer :(
+                            </div>
+
+                            <div class="footer p-4">
+                                <!-- <button class="btn btn-success" style="float:left;" type="button"
+                                    id="prev">Previous</button> -->
+                                <button class="btn btn-success" style="float:right;" type="button"
+                                    id="next">Next</button> </dinv>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-primary btn-lg mx-auto" id="finish">Finish</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Result page-->
+                <div class="row" id="Result">
+                    <div class="col-lg-9">
+                        <div>
+                            <h3 clas="mt-5 display-4">Marks: <span id="marks"></span>/25</h3>
+                            <h3 class="mt-4"><span id="correct-answer">3</span> Correct out of 5</h3>
+                            <h3 class="mt-4">Result: <span id="percentage"></span></h3>
+                            <h3 class="mt-4" id="congrats">Congratulations, You are Pass !</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3" id="trophy">
+                        <img src="img/trophy.png" alt="trophy" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

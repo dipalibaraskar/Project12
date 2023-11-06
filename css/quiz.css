@@ -1,0 +1,26 @@
+.btn.btn-block.btn-outline-success {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+}
+
+#mainBody {
+    margin: 25px 0;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#trophy img
+{
+    display: inline;
+    position: relative;
+    width: 100%;
+} 
+
+#congrats
+{
+    color: red;
+    font-size: 36px;
+    text-shadow: 6px 8px 5px #ccc;
+}
